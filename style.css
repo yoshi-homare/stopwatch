@@ -1,0 +1,100 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  background: rgb(180, 180, 180);
+  font-family: verdana, sans-serif;
+  display: grid;
+  grid-template:
+      "h" 200px
+      "m" 1fr
+      "f" 50px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ヘッダー */
+header {
+  grid-area: h;
+}
+
+header h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* メイン */
+main {
+  grid-area: m;
+}
+
+.container {
+  margin: 0 auto;
+  width: 300px;
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  text-align: center;
+}
+
+#timer {
+  background: rgb(180, 180, 180);
+  font-size: 40px;
+  height: 150px;
+  line-height: 150px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  width: 80px;
+  height: 45px;
+  line-height: 45px;
+  background: rgb(180, 180, 180);
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* フッター */
+footer {
+  grid-area: f;
+}
+
+footer p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* ジャバスクリプト用クラス */
+.inactive {
+  opacity: 0.5;
+}
+
+/* メディアクエリ */
+@media (min-width: 600px) {
+  body {
+    grid-template:
+    ""
+    ""
+    "";
+  }
+
+  /* ヘッダー */
+
+  /* メイン */
+
+  /* フッター */
+
+}
